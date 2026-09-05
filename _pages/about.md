@@ -12,11 +12,6 @@ I am an undergraduate in Computer Science and Technology (Turing Class) at **Sou
 
 My research focuses on **reliable reasoning in large language models**, including uncertainty-aware inference and on-policy distillation. I also enjoy building systems, from compilers to processors, and competing in programming contests.
 
-<div class="profile-actions">
-  <a class="btn btn--primary" href="{{ '/files/cv.pdf' | relative_url }}">Download CV (PDF)</a>
-  <a class="btn" href="mailto:{{ site.author.email }}">Email me</a>
-</div>
-
 ## Research
 
 ### Hybrid Sampling for Reliable On-Policy Distillation
@@ -60,8 +55,6 @@ September 2023 – June 2027 (expected)
 
 ## Selected Awards
 
-- **Gold Medal**, 2024 ICPC Asia Chengdu Regional Contest — October 2024
-- **Gold Medal**, 2024 ICPC Asia Hong Kong Regional Contest — December 2024
-- **Silver Medal**, 2024 ICPC Asia East Continent Final Contest — December 2024
-
-More details, including skills and languages, are available in my [CV]({{ '/cv/' | relative_url }}).
+- **Gold Medal**, 2024 ICPC Asia Chengdu Regional Contest
+- **Gold Medal**, 2024 ICPC Asia Hong Kong Regional Contest
+- **Silver Medal**, 2024 ICPC Asia East Continent Final Contest
