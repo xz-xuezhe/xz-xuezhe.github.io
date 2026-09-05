@@ -12,18 +12,13 @@ I am an undergraduate in Computer Science and Technology (Turing Class) at **Sou
 
 My research focuses on **reliable reasoning in large language models**, including uncertainty-aware inference and on-policy distillation. I also enjoy building systems, from compilers to processors, and competing in programming contests.
 
-<div class="profile-actions">
-  <a class="btn btn--primary" href="{{ '/files/cv.pdf' | relative_url }}">Download CV (PDF)</a>
-  <a class="btn" href="mailto:{{ site.author.email }}">Email me</a>
-</div>
-
 ## Research
 
 ### Hybrid Sampling for Reliable On-Policy Distillation
 
 <p class="entry-date">May – July 2026</p>
 
-Developed a likelihood-ratio-guided sampling rule that selectively replaces student-proposed tokens with teacher samples, together with a source-aware objective using reverse KL for student tokens and forward KL for teacher corrections. The method requires no auxiliary reward or verifier models.
+Contributed to the design and refinement of a likelihood-ratio-guided hybrid sampling method that selectively replaces student-proposed tokens with teacher samples before prefix deviations degrade subsequent supervision. Evaluated the intervention–quality trade-off, showing that **1.9–5.5% teacher-token intervention** substantially improved rollout quality while preserving predominantly student-generated trajectories.
 
 Distilling Qwen3-4B into Qwen3-1.7B improved macro **Avg@8 by 3.25 percentage points** and **Pass@8 by 4.94 percentage points** over on-policy distillation (OPD) on AIME 2024/2025 and AMC 2023. The vLLM-based hybrid rollout pipeline incurred **8.6% runtime overhead** under a matched training-data budget.
 
@@ -41,18 +36,18 @@ Observed model- and difficulty-dependent temperature thresholds beyond which rea
 
 <p class="entry-date">July 2025 · Rust · Compilers</p>
 
-A compiler for a C-like language, lowering ASTs through Koopa IR to RV32IM assembly. Supports scoped symbols, short-circuit control flow, functions, and multidimensional arrays, with seven IR rewrite rules and a 13-register write-back cache. Passed 130 functional tests in both Koopa IR and RISC-V modes, including 20 benchmark programs.
+A compiler for a C-like language, lowering ASTs through Koopa IR to RV32IM assembly. Supports scoped name resolution, short-circuit evaluation, function calls, and multidimensional arrays, with seven IR rewrite rules and a 13-register write-back cache. Passed 130 functional tests in both Koopa IR and RISC-V modes, including 20 benchmark programs.
 
 ### [RISC-V CPU](https://github.com/xz-xuezhe/RV32-CPU)
 
 <p class="entry-date">April – May 2025 · Verilog · Computer Architecture</p>
 
-A five-stage pipelined RV32I CPU supporting 38 instructions, with forwarding, load-use stalls, static branch prediction, and pipeline flushing. Includes UART memory loading and a three-stage Python deployment toolchain. Validated with eight Vivado simulation tests and three on-board assembly tests.
+A five-stage pipelined RV32I CPU supporting 38 instructions, with forwarding, load-use stalls, static branch prediction, and pipeline flushing. Includes UART-based instruction/data loading with a three-stage Python deployment toolchain. Validated with eight Vivado simulation tests and three on-board assembly tests.
 
 ## Education
 
 **Southern University of Science and Technology, China**<br>
-September 2023 – June 2027 (expected)
+August 2023 – June 2027 (expected)
 
 - B.Eng. candidate in Computer Science and Technology (Turing Class)
 - **GPA: 3.92/4.00 · Rank: 4/157**
@@ -60,8 +55,6 @@ September 2023 – June 2027 (expected)
 
 ## Selected Awards
 
-- **Gold Medal**, 2024 ICPC Asia Chengdu Regional Contest — October 2024
-- **Gold Medal**, 2024 ICPC Asia Hong Kong Regional Contest — December 2024
-- **Silver Medal**, 2024 ICPC Asia East Continent Final Contest — December 2024
-
-More details, including skills and languages, are available in my [CV]({{ '/cv/' | relative_url }}).
+- **Gold Medal**, 2024 ICPC Asia Chengdu Regional Contest
+- **Gold Medal**, 2024 ICPC Asia Hong Kong Regional Contest
+- **Silver Medal**, 2024 ICPC Asia East Continent Final Contest

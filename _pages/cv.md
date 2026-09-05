@@ -17,7 +17,7 @@ Updated September 2026.
 ## Education
 
 **Southern University of Science and Technology, China**<br>
-September 2023 – June 2027 (expected)<br>
+August 2023 – June 2027 (expected)<br>
 B.Eng. candidate in Computer Science and Technology (Turing Class)
 
 - GPA: **3.92/4.00**; Rank: **4/157**
@@ -35,8 +35,8 @@ B.Eng. candidate in Computer Science and Technology (Turing Class)
 
 <p class="entry-date">May – July 2026</p>
 
-- Developed a likelihood-ratio-guided hybrid sampling rule to selectively replace student-proposed tokens with teacher samples before prefix deviations degrade subsequent teacher supervision.
-- Formulated a source-aware dual-divergence objective using reverse KL for retained student tokens and forward KL for teacher corrections, without auxiliary reward or verifier models.
+- Contributed to the design and refinement of a likelihood-ratio-guided hybrid sampling method that selectively replaces student-proposed tokens with teacher samples before prefix deviations degrade subsequent supervision.
+- Evaluated the intervention–quality trade-off, showing that 1.9–5.5% teacher-token intervention substantially improved rollout quality while preserving predominantly student-generated trajectories.
 - Built a hybrid rollout pipeline on DAPO-Math-17K by adapting vLLM's speculative-decoding engine; end-to-end training incurred 8.6% runtime overhead over OPD under a matched training-data budget.
 - Distilled Qwen3-4B into Qwen3-1.7B, improving macro Avg@8 by 3.25 percentage points and macro Pass@8 by 4.94 percentage points over OPD on AIME 2024/2025 and AMC 2023.
 
@@ -56,7 +56,7 @@ B.Eng. candidate in Computer Science and Technology (Turing Class)
 <p class="entry-date">July 2025</p>
 
 - Built a compiler written in Rust for a C-like language, lowering ASTs through Koopa IR to RV32IM assembly.
-- Implemented scoped symbol tables, short-circuit control flow, functions, and multidimensional arrays.
+- Implemented scoped name resolution, short-circuit evaluation, function calls, and multidimensional arrays.
 - Optimized IR with seven rewrite rules and code generation with a 13-register write-back cache.
 - Passed 130 functional tests in both Koopa IR and RISC-V modes, including 20 benchmark programs.
 
@@ -66,7 +66,7 @@ B.Eng. candidate in Computer Science and Technology (Turing Class)
 
 - Designed a five-stage pipelined RV32I CPU in Verilog supporting 38 instructions.
 - Handled data/control hazards with forwarding, load-use stalls, static branch prediction, and pipeline flushing.
-- Implemented UART loading of instruction/data memory and a three-stage Python deployment toolchain.
+- Implemented UART-based instruction/data loading with a three-stage Python deployment toolchain.
 - Passed eight Vivado simulation tests and three on-board assembly tests covering core modules, MMIO, and AUIPC.
 
 ## Skills
