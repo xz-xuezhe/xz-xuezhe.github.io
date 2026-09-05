@@ -41,3 +41,25 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 1.25em 0 2em;
+}
+
+.page__content .entry-date {
+  color: var(--global-text-color-light);
+  font-size: 0.85em;
+  margin-top: -0.75em;
+}
+
+.page__content h2 {
+  scroll-margin-top: 5rem;
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--global-link-color);
+  outline-offset: 4px;
+}

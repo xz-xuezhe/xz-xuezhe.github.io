@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Zhe Xue"
 title_separator          : "-"
 name                     : &name "Zhe Xue"
-description              : &description "CS UG Student @ SUSTech"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Zhe Xue — CS undergraduate at SUSTech researching reliable LLM reasoning, uncertainty-aware inference, and on-policy distillation."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://xz-xuezhe.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,11 +26,11 @@ author:
   avatar           : "profile.jpg"
   name             : "Zhe Xue"
   pronouns         : # example: "she/her"  
-  bio              : "CS UG Student @ SUSTech"
+  bio              : "CS undergraduate at SUSTech. Reliable LLM reasoning & distillation."
   location         : "Shenzhen, China"
   employer         : "SUSTech"
   uri              : # URL
-  email            : "12311012@mail.sustech.edu.cn" 
+  email            : "xuez2023@mail.sustech.edu.cn"
 
   # Academic websites
   academia         : # URL
@@ -63,7 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "xuez04"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -92,7 +92,7 @@ publication_category:
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
@@ -122,7 +122,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -141,13 +141,15 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_description           : *description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : *name
+  links:
+    - https://github.com/xz-xuezhe
+    - https://www.linkedin.com/in/xuez04/
 
 
 # Analytics
@@ -163,6 +165,35 @@ include:
   - _pages
   - files
 exclude:
+  # Template examples and development tools are not personal site content.
+  - _posts
+  - _publications
+  - _talks
+  - _teaching
+  - _portfolio
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/portfolio.html
+  - _pages/publications.html
+  - _pages/tag-archive.html
+  - _pages/talkmap.html
+  - _pages/talks.html
+  - _pages/teaching.html
+  - _pages/terms.md
+  - _pages/year-archive.html
+  - .devcontainer
+  - CONTRIBUTING.md
+  - docker-compose.yaml
+  - markdown_generator
+  - scripts
+  - talkmap
+  - talkmap.py
+  - talkmap.ipynb
+  - talkmap_out.ipynb
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
